@@ -1,0 +1,52 @@
+{
+  "name": "@falkor/falkor-knowledge-base",
+  "version": "0.0.1",
+  "description": "Falkor Framework knowledge base",
+  "author": {
+    "name": "Barnabas Bucsy",
+    "url": "https://github.com/theonethread"
+  },
+  "contributors": [
+    {
+      "name": "Barnabas Bucsy",
+      "url": "https://github.com/theonethread"
+    }
+  ],
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/theonethread/falkor-knowledge-base/#readme",
+  "repository": "github:theonethread/falkor-knowledge-base",
+  "bugs": "https://github.com/theonethread/falkor-knowledge-base/issues",
+  "funding": [
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/falkor_framework"
+    },
+    {
+      "type": "individual",
+      "url": "https://www.linkedin.com/in/barnabas-bucsy"
+    }
+  ],
+  "keywords": [
+    "falkor",
+    "knowledge",
+    "base",
+    "know-how"
+  ],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8"
+  },
+  "engineStrict": true,
+  "main": "readme.md",
+  "dependencies": {},
+  "devDependencies": {
+    "@falkor/falkor-prettier-config": "0.0.1",
+    "@falkor/falkor-cspell-config": "0.0.1"
+  }
+}
