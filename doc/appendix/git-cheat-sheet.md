@@ -354,6 +354,15 @@ A `fork` is a copy of someone else's repository that you manage. It lets you mak
    $ git remote set-url --push upstream DISABLE       # disable pushing to upstream
    ```
 
+To reset your branch to the upstream state:
+
+```shell
+$ git fetch upstream
+$ git checkout <branch>
+$ git reset --hard upstream/<branch>
+$ git push origin <branch> --force
+```
+
 ### **Working with Submodules**
 
 #### **Add a Submodule**
