@@ -12,7 +12,6 @@
       - [**Clone a Repository**](#clone-a-repository)
       - [**Clean a Repository**](#clean-a-repository)
       - [**Add Existing File Structure**](#add-existing-file-structure)
-      - [**Create Branch without History**](#create-branch-without-history)
       - [**Logging**](#logging)
       - [**Stashing**](#stashing)
       - [**Working with Remotes**](#working-with-remotes)
@@ -116,15 +115,6 @@ To also push to a remote:
 $ git remote add <origin> <remote-repository>.git
 $ git remote --verbose                 # just list remotes to ensure everything went well
 $ git push <origin> <branch-name>
-```
-
-### **Create Branch without History**
-
-```shell
-$ cd <project-folder>
-$ git checkout --orphan <new-branch-name>
-$ git commit
-$ git push --set-upstream origin <new-branch-name>
 ```
 
 ### **Logging**
@@ -250,6 +240,15 @@ To rename a branch:
 $ git branch --move <old-branch> <new-branch>
 $ git push <origin> <new-branch>             # to propagate your work on the server
 $ git push <origin> --delete <old-branch>    # to delete branch on the server
+```
+
+To create a branch without history:
+
+```shell
+$ cd <project-folder>
+$ git checkout --orphan <new-branch-name>
+$ git commit
+$ git push --set-upstream origin <new-branch-name>
 ```
 
 ### **Merging and Resolving Conflicts**
